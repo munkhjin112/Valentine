@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f0e3;
+            font-family: 'Georgia', serif;
+            text-align: center;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+        h1 {
+            color: #b22222;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: #b22222;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #8b0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Be My Valentine ❤️</h1>
+        <p>Even though miles separate us, my heart is always with you. Every moment we spend apart only makes me cherish you more. You are my happiness, my safe place, and my greatest love.</p>
+        <p>This Valentine's Day, I want you to know that distance can never diminish what we have. You are always in my thoughts, and I count the days until we can finally hold each other again.</p>
+        <p>Will you be my Valentine?</p>
+        <button onclick="reply()">Yes! 💖</button>
+        <p id="message" style="display:none; font-size: 20px; color: #b22222; margin-top: 15px;"></p>
+    </div>
+    
+    <script>
+        function reply() {
+            document.getElementById("message").innerText = "I love you, my babe! See you June 1 ❤️";
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
